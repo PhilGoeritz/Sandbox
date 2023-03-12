@@ -6,7 +6,7 @@ using System.Reactive.Linq;
 
 namespace Sandbox.Reactive.ViewModel
 {
-    public sealed class ReactiveMessageViewModel : ReactiveObject
+    public sealed class ReactiveMessageViewModel : ReactiveObject, IDisposable
     {
         private readonly CompositeDisposable _disposables = new CompositeDisposable();
 
@@ -35,6 +35,11 @@ namespace Sandbox.Reactive.ViewModel
                 .Select(pattern => pattern.EventArgs.PropertyName)
                 .Subscribe(propertyName => this.RaisePropertyChanged(propertyName))
                 .DisposeWith(_disposables);
+        }
+
+        public void Dispose()
+        {
+            _disposables.Dispose();
         }
     }
 }
