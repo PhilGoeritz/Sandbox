@@ -5,15 +5,17 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sandbox.Reactive.Tests", "Sandbox.Reactive.Tests\Sandbox.Reactive.Tests.csproj", "{9BA63450-0C89-4D9A-B320-9BCB87511E14}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sandbox.Reactive", "Sandbox.Reactive\Sandbox.Reactive.csproj", "{412E9A7C-FC33-4E33-855D-57EA45428E93}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reactive", "Reactive", "{B121F432-1782-4091-9DD6-7E6786CD61EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sandbox.Tests.Shared", "Sandbox.Tests.Shared\Sandbox.Tests.Shared.csproj", "{C2200CC9-B749-4C32-835A-59BF68121879}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0037E724-6715-436E-8133-F91C215BFD74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.DatabaseApp", "Sandbox.DatabaseApp\Sandbox.DatabaseApp.csproj", "{5DAED524-9817-419F-AB11-26444759CA52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sandbox.DatabaseApp", "Sandbox.DatabaseApp\Sandbox.DatabaseApp.csproj", "{5DAED524-9817-419F-AB11-26444759CA52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{28922F1C-E8E0-4858-BA8B-598E23D45C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Shared.Reactive", "Sandbox.Shared.Reactive\Sandbox.Shared.Reactive.csproj", "{C385834E-AF60-4FD4-AE4D-C41E6B253394}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +27,6 @@ Global
 		{9BA63450-0C89-4D9A-B320-9BCB87511E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA63450-0C89-4D9A-B320-9BCB87511E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA63450-0C89-4D9A-B320-9BCB87511E14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{412E9A7C-FC33-4E33-855D-57EA45428E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{412E9A7C-FC33-4E33-855D-57EA45428E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{412E9A7C-FC33-4E33-855D-57EA45428E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{412E9A7C-FC33-4E33-855D-57EA45428E93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C2200CC9-B749-4C32-835A-59BF68121879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2200CC9-B749-4C32-835A-59BF68121879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2200CC9-B749-4C32-835A-59BF68121879}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,14 +35,19 @@ Global
 		{5DAED524-9817-419F-AB11-26444759CA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DAED524-9817-419F-AB11-26444759CA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DAED524-9817-419F-AB11-26444759CA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C385834E-AF60-4FD4-AE4D-C41E6B253394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C385834E-AF60-4FD4-AE4D-C41E6B253394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C385834E-AF60-4FD4-AE4D-C41E6B253394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C385834E-AF60-4FD4-AE4D-C41E6B253394}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9BA63450-0C89-4D9A-B320-9BCB87511E14} = {B121F432-1782-4091-9DD6-7E6786CD61EC}
-		{412E9A7C-FC33-4E33-855D-57EA45428E93} = {B121F432-1782-4091-9DD6-7E6786CD61EC}
+		{C2200CC9-B749-4C32-835A-59BF68121879} = {28922F1C-E8E0-4858-BA8B-598E23D45C60}
 		{5DAED524-9817-419F-AB11-26444759CA52} = {0037E724-6715-436E-8133-F91C215BFD74}
+		{C385834E-AF60-4FD4-AE4D-C41E6B253394} = {28922F1C-E8E0-4858-BA8B-598E23D45C60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DD21E50-7EFF-4433-844A-DACB7C0D0D04}

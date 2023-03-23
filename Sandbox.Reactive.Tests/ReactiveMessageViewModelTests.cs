@@ -1,6 +1,5 @@
 ﻿using FluentAssertions;
-using Sandbox.Reactive.Model;
-using Sandbox.Reactive.ViewModel;
+using Sandbox.Shared.Reactive.Model;
 using Sandbox.Tests.Shared;
 
 namespace Sandbox.Reactive.Tests.ReactiveMessageViewModelTests
